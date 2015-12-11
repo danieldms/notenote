@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# My Custom Gems
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'simple_form', '~> 3.2'
+gem 'devise', '~> 3.5', '>= 3.5.3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
