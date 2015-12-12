@@ -37,6 +37,8 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'simple_form', '~> 3.2'
 gem 'devise', '~> 3.5', '>= 3.5.3'
 
+gem 'bootstrap-sass', '~> 3.2.0.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

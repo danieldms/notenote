@@ -1,4 +1,5 @@
-= simple_form_for @note do |f|
-	= f.input :title
-	= f.text_area :content
+= simple_form_for(@note, html: { class: 'form-horizontal' } ) do |f|
+	= f.input :title, label: "Note Title"
+	= f.input :content, label: "Description"
+	%br/
 	= f.button :submit

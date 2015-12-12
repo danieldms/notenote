@@ -1,0 +1,17 @@
+!!!
+%html
+%head
+	%title NoteNote
+	
+	= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+	= javascript_include_tag "application", "data-turbolinks-track" => true
+	= csrf_meta_tags
+
+%body
+	%nav.navbar.navbar-default
+		.container
+			%p.notice= notice
+			%p.alert= alert
+
+	.container
+		= yield
