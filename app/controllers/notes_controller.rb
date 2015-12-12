@@ -1,6 +1,7 @@
 class NotesController < ApplicationController
 
 	before_action :find_note, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
 		@notes = Note.where(user_id: current_user ).order("created_at DESC")

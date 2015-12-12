@@ -1,5 +1,12 @@
+
 - @notes.each do |note|
-	%h2= link_to note.title, note
-	%p= time_ago_in_words(note.created_at)
+	.col-xs-6.col-md-4
+		%div.panel.panel-default
+			.panel-body
+				%h3.panel-title= link_to note.title, note
+				%hr/
+				%p= time_ago_in_words(note.created_at)
+
+.clearfix.isible-xs-block
 
 = link_to "New Note", new_note_path

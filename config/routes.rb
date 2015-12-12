@@ -1,6 +1,7 @@
 Notenote::Application.routes.draw do
   
   devise_for :users
+  
   get "welcome/index"
 
   authenticated :user do
