@@ -1,8 +1,15 @@
-%p= @note.title
-%p= @note.content
 
-= link_to "All notes", notes_path
+%h1.title= @note.title
+%p= simple_format(@note.content)
 
-- if user_signed_in?
-	= link_to "Edit", edit_note_path(@note)
-	= link_to "Delete", note_path(@note), method: :delete, confirm: "Are you sure?"
+.col-md-4.col-md-offset-4
+	%hr/
+
+.clearfix
+
+.buttons
+	= link_to "All notes", notes_path, class: "btn btn-default"
+
+	- if user_signed_in?
+		= link_to "Edit", edit_note_path(@note), class: "btn btn-default"
+		= link_to "Delete", note_path(@note), method: :delete, confirm: "Are you sure?", class: "btn btn-default"
