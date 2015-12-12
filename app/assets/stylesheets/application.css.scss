@@ -11,8 +11,8 @@
  *= require_self
  *= require_tree .
  */
- 
+
 @import 'normalize.css';
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import "notes.css.scss";

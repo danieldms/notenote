@@ -1,7 +1,8 @@
-= simple_form_for(@note, html: { class: 'form-horizontal' } ) do |f|
-	= f.input :title, label: "Note Title"
-	= f.input :content, label: "Description"
-	%br/
-	= f.button :submit
+= simple_form_for @note do |f|
 
-= link_to "All Notes", notes_path
+	= f.input :title
+	= f.input :content
+
+
+	= link_to "Cancel", notes_path, class: "btn btn-danger"
+	= f.button :submit, class: "btn btn-default"
